@@ -170,6 +170,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
 </div>
 
 <div id="listuser">
+
 #### Lista todas as "listas" do usuário.
 
 - **Endpoint:** `GET /lists/:user_id`
@@ -479,7 +480,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
 #### Cria o relacionamento de adição do anime a lista do usuario.
 
 - **Endpoint:** `POST /useranimelist/create`
-- **Descrição:** Lista uma categoria especifica e todos os animes vinculadas a ela.
+- **Descrição:** Adiciona um anime a uma lista criada.
 - **Exemplo de envio:**
 
 ```json
