@@ -5,10 +5,12 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
 
 ### Features
 ### 👨‍👦 Usuários 
-- Criação de um novo usuário.
-- Login de usuário.
-- Listar um usuário especifico.
-- Excluir um usuário especifico (🔨 em desenvolvimento).
+- [Criação de um novo usuário](#createuser).
+- [Login de usuário](#loginuser).
+- [Listar um usuário especifico](#listuser).
+- [Excluir um usuário especifico (🔨 em desenvolvimento)](#deleteuser).
+
+<div id="createuser">
 
 #### Criação de um novo usuário
 
@@ -30,6 +32,10 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
     "message": "Usuario criado"
     }
 ```
+
+</div>
+
+<div id="loginuser">
 
 #### Login de usuário
 
@@ -57,6 +63,9 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
         }
     }
 ```
+</div>
+
+<div id="listuser">
 
 #### Listar um usuário especifico
 
@@ -76,8 +85,9 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
         "bio": "Eu adoro naruto, Naruto é um ninja da vila oculta da folha que sonha em ser hokage mas sem os pais presentes ele é visto por todos como uma criança descontrolada e todos o ignoram..."
     }
 ```
+</div>
 
-
+<div id="deleteuser">
 
 #### Excluir um usuário especifico
 
@@ -88,9 +98,12 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
 ```json
     (🔨 em desenvolvimento)
 ```
+</div>
 
 #### 👨‍👦 Usuários Detalhes
-- Atualiza informaçoes extras do usuário.
+- [Atualiza informaçoes extras do usuário](#updateuser).
+
+<div id="updateuser">
 
 #### Atualiza informaçoes extras do usuário.
 
@@ -120,15 +133,17 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
         "bio": "Eu gosto de animes!"
     }
 ```
-
+</div>
 
 
 ### 📖 Listas
-- Cria uma lista.
-- Lista todas as "listas" do usuário.
-- Lista todos os "animes" e informaçoes a respeito de uma lista em especifica.
-- Atualiza o nome de uma lista.
-- Deleta uma lista.
+- [Cria uma lista](#createlist).
+- [Lista todas as "listas" do usuário](#listuser).
+- [Lista todos os "animes" e informaçoes a respeito de uma lista em especifica](#infolist).
+- [Atualiza o nome de uma lista](#updatelist).
+- [Deleta uma lista](#deletelist).
+
+<div id="createlist">
 
 #### Cria uma lista.
 
@@ -152,7 +167,9 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
         "created_at": "2024-06-03T23:20:23.009Z"
     }
 ```
+</div>
 
+<div id="listuser">
 #### Lista todas as "listas" do usuário.
 
 - **Endpoint:** `GET /lists/:user_id`
@@ -175,6 +192,9 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
         }
     ]
 ```
+<div>
+
+<div id="infolist">
 
 #### Lista todos os "animes" e informaçoes a respeito de uma lista em especifica.
 
@@ -212,6 +232,9 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
   ]
 }
 ```
+</div>
+
+<div id="updatelist">
 
 #### Atualiza o nome de uma lista.
 
@@ -235,6 +258,9 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
         "created_at": "2024-06-03T23:20:23.009Z"
     }
 ```
+</div>
+
+<div id="deletelist">
 
 #### Deleta uma lista.
 
@@ -247,13 +273,16 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
       "message": "1 Registro(s) excluido(s) com sucesso."
     }
 ```
+</div>
 
 
 ### 🐱‍👤⚔ Animes
-- Cria um anime.
-- Lista todos os animes.
-- Procura animes dependendo do nome digitado.
-- Lista um anime especifico.
+- [Cria um anime](#createanime).
+- [Lista todos os animes](#listanimes).
+- [Procura animes dependendo do nome digitado](#searchanime).
+- [Lista um anime especifico](#getanime).
+
+<div id="createanime">
 
 #### Cria um anime.
 
@@ -275,6 +304,9 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
         "message": "Anime criado"
     }
 ```
+</div>
+
+<div id="listanimes">
 
 #### Lista animes.
 
@@ -298,6 +330,10 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
     }
 ]
 ```
+
+</div>
+
+<div id="searchanime">
 
 #### Lista animes pelo nome digitado.
 
@@ -323,10 +359,33 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
 ]
 ```
 
+</div>
+
+<div id="getanime">
+
+#### Lista um anime especifico
+
+- **Endpoint:** `GET /anime/:id_anime`
+- **Descrição:** Lista um anime especifico pelo ID.
+- **Exemplo de resposta:**
+
+```json
+    {
+        "id": "1400e81c-4e1a-423a-b773-4ca11012fd72",
+        "title": "Naruto",
+        "description": "Naruto é um ninja da vila oculta da folha que sonha em ser hokage mas sem os pais presentes ele é visto por todos como uma criança descontrolada e todos o ignoram...",
+        "img": "naruto.jpg"
+    }
+```
+
+</div>
+
 ### 🌎Categorias
-- Cria uma categoria.
-- Lista todas as categorias.
-- Lista uma categoria especifica.
+- [Cria uma categoria](#createcategorie).
+- [Lista todas as categorias](#listcategories).
+- [Lista uma categoria especifica](#listespecificCategorie).
+
+<div id="createcategorie">
 
 #### Cria uma categoria.
 
@@ -347,6 +406,10 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
         "message": "Categoria Criada"
     }
 ```
+
+</div>
+
+<div id="listcategories">
 
 #### Lista todas as categorias.
 
@@ -379,6 +442,10 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
     ]
 ```
 
+</div>
+
+<div id="listespecificCategorie">
+
 #### Lista uma categoria especifica e todos os animes vinculadas a ela.
 
 - **Endpoint:** `GET /categorie/:id`
@@ -401,9 +468,13 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
     }
 ```
 
+</div>
+
 ### 👨‍👦🐱‍👤📖 User Anime List
-- Cria o relacionamento de adição do anime a lista do usuario.
-- Delete o anime da lista do usuario.
+- [Cria o relacionamento de adição do anime a lista do usuario](#addAnimetoList).
+- [Delete o anime da lista do usuario](#deleteAnimefromList).
+
+<div id="addAnimetoList">
 
 #### Cria o relacionamento de adição do anime a lista do usuario.
 
@@ -430,6 +501,9 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
         "rating": 5
     }
 ```
+</div>
+
+<div id="deleteAnimefromList">
 
 #### Delete o anime da lista do usuario.
 
@@ -442,6 +516,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
         "message": "1 Registro(s) excluido(s) com sucesso."
     }
 ```
+</div>
 
 ### Tecnologias Utilizadas
 
