@@ -4,13 +4,13 @@
 My Anime List é uma aplicação web que permite aos usuários gerenciar suas listas de animes favoritos. Os usuários podem fazer login, criar e atualizar seu perfil, adicionar animes às suas listas personalizadas, criar novos animes e categorias, e pesquisar animes por categoria.
 
 ### Features
-#### 👨‍👦 Usuários 
+### 👨‍👦 Usuários 
 - Criação de um novo usuário.
 - Login de usuário.
 - Listar um usuário especifico.
 - Excluir um usuário especifico (🔨 em desenvolvimento).
 
-### Criação de um novo usuário
+#### Criação de um novo usuário
 
 - **Endpoint:** `POST /user/create`
 - **Descrição:** Cria um novo usuário.
@@ -31,7 +31,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
     }
 ```
 
-### Login de usuário
+#### Login de usuário
 
 - **Endpoint:** `POST /login`
 - **Descrição:** Conecta um usuario ao sistema e retorna o token.
@@ -58,7 +58,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
     }
 ```
 
-### Listar um usuário especifico
+#### Listar um usuário especifico
 
 - **Endpoint:** `GET /user/:userId`
 - **Descrição:** Lista todos os detalhes do usuario.
@@ -79,7 +79,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
 
 
 
-### Excluir um usuário especifico
+#### Excluir um usuário especifico
 
 - **Endpoint:** `DELETE /user`
 - **Descrição:** Exclui um usuario em especifico.
@@ -92,7 +92,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
 #### 👨‍👦 Usuários Detalhes
 - Atualiza informaçoes extras do usuário.
 
-### Atualiza informaçoes extras do usuário.
+#### Atualiza informaçoes extras do usuário.
 
 - **Endpoint:** `PATCH /user/details/update`
 - **Descrição:** Atualiza informações do usuario.
@@ -123,14 +123,14 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
 
 
 
-#### 📖 Listas
+### 📖 Listas
 - Cria uma lista.
 - Lista todas as "listas" do usuário.
 - Lista todos os "animes" e informaçoes a respeito de uma lista em especifica.
 - Atualiza o nome de uma lista.
 - Deleta uma lista.
 
-### Cria uma lista.
+#### Cria uma lista.
 
 - **Endpoint:** `POST /list/create`
 - **Descrição:** Cria uma lista para o usuário.
@@ -153,7 +153,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
     }
 ```
 
-### Lista todas as "listas" do usuário.
+#### Lista todas as "listas" do usuário.
 
 - **Endpoint:** `GET /lists/:user_id`
 - **Descrição:** Lista todas as listas que o usuário criou.
@@ -176,7 +176,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
     ]
 ```
 
-### Lista todos os "animes" e informaçoes a respeito de uma lista em especifica.
+#### Lista todos os "animes" e informaçoes a respeito de uma lista em especifica.
 
 - **Endpoint:** `GET /list/:id_lists`
 - **Descrição:** Lista todos os "animes" e informaçoes a respeito de uma lista em especifica.
@@ -213,7 +213,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
 }
 ```
 
-### Atualiza o nome de uma lista.
+#### Atualiza o nome de uma lista.
 
 - **Endpoint:** `PATCH /list/name/update`
 - **Descrição:** Atualiza o nome de uma lista em especifica.
@@ -236,7 +236,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
     }
 ```
 
-### Deleta uma lista.
+#### Deleta uma lista.
 
 - **Endpoint:** `PATCH /list/:id_lists`
 - **Descrição:** Deleta uma lista especifica.
@@ -249,13 +249,13 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
 ```
 
 
-#### 🐱‍👤⚔ Animes
+### 🐱‍👤⚔ Animes
 - Cria um anime.
 - Lista todos os animes.
 - Procura animes dependendo do nome digitado.
 - Lista um anime especifico.
 
-### Cria um anime.
+#### Cria um anime.
 
 - **Endpoint:** `POST /anime/create`
 - **Descrição:** Cria um anime junto com a categoria no qual pertence.
@@ -276,7 +276,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
     }
 ```
 
-### Lista animes.
+#### Lista animes.
 
 - **Endpoint:** `GET /animes`
 - **Descrição:** Lista todos os animes existentes.
@@ -299,7 +299,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
 ]
 ```
 
-### Lista animes pelo nome digitado.
+#### Lista animes pelo nome digitado.
 
 - **Endpoint:** `POST /animes/search`
 - **Descrição:** Lista animes pelo nome digitado.
@@ -323,12 +323,12 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
 ]
 ```
 
-#### 🌎Categorias
+### 🌎Categorias
 - Cria uma categoria.
 - Lista todas as categorias.
 - Lista uma categoria especifica.
 
-### Cria uma categoria.
+#### Cria uma categoria.
 
 - **Endpoint:** `POST /categorie/create`
 - **Descrição:** Cria uma categoria.
@@ -348,7 +348,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
     }
 ```
 
-### Lista todas as categorias.
+#### Lista todas as categorias.
 
 - **Endpoint:** `GET /categories`
 - **Descrição:** Lista todas as categorias.
@@ -379,7 +379,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
     ]
 ```
 
-### Lista uma categoria especifica e todos os animes vinculadas a ela.
+#### Lista uma categoria especifica e todos os animes vinculadas a ela.
 
 - **Endpoint:** `GET /categorie/:id`
 - **Descrição:** Lista uma categoria especifica e todos os animes vinculadas a ela.
@@ -401,11 +401,11 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
     }
 ```
 
-#### 👨‍👦🐱‍👤📖 User Anime List
+### 👨‍👦🐱‍👤📖 User Anime List
 - Cria o relacionamento de adição do anime a lista do usuario.
 - Delete o anime da lista do usuario.
 
-### Cria o relacionamento de adição do anime a lista do usuario.
+#### Cria o relacionamento de adição do anime a lista do usuario.
 
 - **Endpoint:** `POST /useranimelist/create`
 - **Descrição:** Lista uma categoria especifica e todos os animes vinculadas a ela.
@@ -431,7 +431,7 @@ My Anime List é uma aplicação web que permite aos usuários gerenciar suas li
     }
 ```
 
-### Delete o anime da lista do usuario.
+#### Delete o anime da lista do usuario.
 
 - **Endpoint:** `DELETE /useranimelist/:id_lists/:id_anime`
 - **Descrição:** Deleta um anime especifico de uma lista do usuário.
